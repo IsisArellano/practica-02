@@ -7,27 +7,35 @@
 
     <title>SHIFT - Área de aprendizaje</title>
 
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS propio de SHIFT -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="navbar">
+    <!-- NAVBAR DE SHIFT -->
+    <header class="shift-navbar">
 
-        <div class="logo">
-            SHIFT<span>✦</span>
-        </div>
+        <div class="container-fluid">
 
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#" class="active">Aprender</a>
-            <a href="#">Mi perfil</a>
-            <a href="#">Ayuda</a>
-        </nav>
+            <div class="logo">
+                SHIFT<span>✦</span>
+            </div>
 
-        <div class="profile">
-            ●
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#" class="active">Aprender</a>
+                <a href="#">Mi perfil</a>
+                <a href="#">Ayuda</a>
+            </nav>
+
+            <div class="profile">
+                ●
+            </div>
+
         </div>
 
     </header>
@@ -37,60 +45,66 @@
     <main>
 
         <!-- ENCABEZADO -->
-        <section class="hero">
+        <section class="hero container py-5">
 
-            <div class="hero-text">
+            <div class="row align-items-center">
 
-                <p class="subtitle">ÁREA DE APRENDIZAJE</p>
+                <div class="col-lg-6 hero-text">
 
-                <h1>
-                    ¿Qué inglés quieres
-                    <br>
-                    aprender?
-                </h1>
+                    <p class="subtitle">
+                        ÁREA DE APRENDIZAJE
+                    </p>
 
-                <p class="description">
-                    Elige un área de aprendizaje para adaptar el contenido
-                    a tus intereses y comienza tu camino con SHIFT.
-                </p>
+                    <h1>
+                        ¿Qué inglés quieres
+                        <br>
+                        aprender?
+                    </h1>
 
-            </div>
+                    <p class="description">
+                        Elige un área de aprendizaje para adaptar el contenido
+                        a tus intereses y comienza tu camino con SHIFT.
+                    </p>
 
-
-            <!-- ILUSTRACIÓN -->
-            <div class="hero-illustration">
-
-                <div class="speech speech-one">
-                    Better English<br>
-                    Brighter<br>
-                    Opportunities
                 </div>
 
-                <div class="student">
 
-                    <div class="hair"></div>
+                <!-- ILUSTRACIÓN -->
+                <div class="col-lg-6 hero-illustration">
 
-                    <div class="face">
-                        <span class="eye left"></span>
-                        <span class="eye right"></span>
-                        <span class="smile"></span>
+                    <div class="speech speech-one">
+                        Better English<br>
+                        Brighter<br>
+                        Opportunities
                     </div>
 
-                    <div class="body">
+                    <div class="student">
 
-                        <div class="laptop">
-                            <span>✦</span>
+                        <div class="hair"></div>
+
+                        <div class="face">
+                            <span class="eye left"></span>
+                            <span class="eye right"></span>
+                            <span class="smile"></span>
+                        </div>
+
+                        <div class="student-body">
+
+                            <div class="laptop">
+                                <span>✦</span>
+                            </div>
+
                         </div>
 
                     </div>
 
-                </div>
+                    <div class="speech speech-two">
+                        Learn<br>
+                        Practice<br>
+                        Grow<br>
+                        SHIFT
+                    </div>
 
-                <div class="speech speech-two">
-                    Learn<br>
-                    Practice<br>
-                    Grow<br>
-                    SHIFT
                 </div>
 
             </div>
@@ -99,11 +113,10 @@
 
 
         <!-- ÁREAS DE APRENDIZAJE -->
-        <section class="areas">
-
+        <section class="areas container py-4">
 
             <!-- PROGRAMACIÓN -->
-            <article class="card">
+            <article class="shift-card">
 
                 <div class="icon-container programming">
                     <span>&lt;/&gt;</span>
@@ -116,7 +129,7 @@
                     desarrollo y mundo digital.
                 </p>
 
-                <button>
+                <button class="btn shift-btn">
                     Seleccionar →
                 </button>
 
@@ -124,7 +137,7 @@
 
 
             <!-- GASTRONOMÍA -->
-            <article class="card">
+            <article class="shift-card">
 
                 <div class="icon-container cooking">
                     <span>♨</span>
@@ -137,7 +150,7 @@
                     y situaciones del mundo culinario.
                 </p>
 
-                <button>
+                <button class="btn shift-btn">
                     Seleccionar →
                 </button>
 
@@ -145,7 +158,7 @@
 
 
             <!-- TURISMO -->
-            <article class="card">
+            <article class="shift-card">
 
                 <div class="icon-container tourism">
                     <span>✈</span>
@@ -158,7 +171,7 @@
                     atención al cliente y experiencias turísticas.
                 </p>
 
-                <button>
+                <button class="btn shift-btn">
                     Seleccionar →
                 </button>
 
@@ -166,7 +179,7 @@
 
 
             <!-- NEGOCIOS -->
-            <article class="card">
+            <article class="shift-card">
 
                 <div class="icon-container business">
                     <span>▣</span>
@@ -179,7 +192,7 @@
                     empresariales y comunicación laboral.
                 </p>
 
-                <button>
+                <button class="btn shift-btn">
                     Seleccionar →
                 </button>
 
@@ -187,7 +200,7 @@
 
 
             <!-- INGLÉS COTIDIANO -->
-            <article class="card">
+            <article class="shift-card">
 
                 <div class="icon-container everyday">
                     <span>•••</span>
@@ -200,7 +213,7 @@
                     situaciones diarias de la vida real.
                 </p>
 
-                <button>
+                <button class="btn shift-btn">
                     Seleccionar →
                 </button>
 
@@ -210,7 +223,7 @@
 
 
         <!-- MENSAJE INFERIOR -->
-        <section class="bottom-banner">
+        <section class="bottom-banner container my-5">
 
             <div class="banner-icon">
                 ✦
@@ -224,6 +237,10 @@
         </section>
 
     </main>
+
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 

@@ -1,72 +1,103 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
 
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    margin: 0;
+    padding: 0;
+
     font-family: Arial, sans-serif;
-    background-color: #f7f7ff;
-    color: #171742;
+
+    background-color: #f8f8ff;
+
+    color: #25264d;
 }
 
 
-.navbar {
-    height: 85px;
+/* =========================
+   NAVBAR
+========================= */
+
+.shift-navbar {
+    width: 100%;
+
     background-color: #ffffff;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 6%;
-
     border-bottom: 1px solid #eeeeff;
+
+    padding: 20px 4%;
+}
+
+.shift-navbar .container-fluid {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
 }
 
 
+/* LOGO */
 
 .logo {
     font-size: 38px;
+
     font-weight: 800;
+
     color: #424790;
+
     letter-spacing: -2px;
 }
 
 .logo span {
     color: #7c70e8;
+
     font-size: 25px;
+
     margin-left: 5px;
 }
 
 
+/* MENÚ */
 
-nav {
+.shift-navbar nav {
     display: flex;
+
     align-items: center;
+
     gap: 35px;
 }
 
-nav a {
+.shift-navbar nav a {
     text-decoration: none;
+
     color: #25264d;
+
     font-size: 17px;
+
     padding: 12px 18px;
+
     border-radius: 12px;
 }
 
-nav a:hover {
+.shift-navbar nav a:hover {
     background-color: #f1a8c6;
 }
 
-nav .active {
+.shift-navbar nav .active {
     background-color: #e9e7ff;
+
     color: #514ac5;
+
     font-weight: bold;
 }
 
 
+/* PERFIL */
 
 .profile {
     width: 42px;
@@ -79,42 +110,59 @@ nav .active {
     color: white;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     font-size: 20px;
 }
 
 
+/* =========================
+   CONTENIDO
+========================= */
+
 main {
     width: 90%;
+
     max-width: 1400px;
+
     margin: auto;
 }
 
 
+/* =========================
+   HERO
+========================= */
+
 .hero {
     min-height: 370px;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    align-items: center;
 
     padding: 45px 40px 20px;
 }
 
+.hero-text {
+    padding-left: 0;
+}
+
+
 .subtitle {
     color: #655bd1;
+
     font-size: 17px;
+
     font-weight: 600;
+
     letter-spacing: 1px;
 
     margin-bottom: 18px;
 }
 
+
 .hero h1 {
     font-size: 55px;
+
     line-height: 1.05;
 
     color: #151540;
@@ -122,15 +170,21 @@ main {
     margin-bottom: 25px;
 }
 
+
 .description {
     max-width: 600px;
 
     color: #555875;
 
     font-size: 19px;
+
     line-height: 1.6;
 }
 
+
+/* =========================
+   ILUSTRACIÓN
+========================= */
 
 .hero-illustration {
     height: 330px;
@@ -138,7 +192,9 @@ main {
     position: relative;
 
     display: flex;
+
     justify-content: center;
+
     align-items: flex-end;
 }
 
@@ -147,6 +203,7 @@ main {
     position: relative;
 
     width: 230px;
+
     height: 250px;
 
     margin-bottom: 15px;
@@ -157,6 +214,7 @@ main {
     position: absolute;
 
     width: 170px;
+
     height: 190px;
 
     background-color: #24235c;
@@ -164,15 +222,16 @@ main {
     border-radius: 50% 50% 45% 45%;
 
     left: 30px;
+
     top: 10px;
 }
-
 
 
 .face {
     position: absolute;
 
     width: 105px;
+
     height: 125px;
 
     background-color: #f1a8c6;
@@ -180,6 +239,7 @@ main {
     border-radius: 45%;
 
     left: 63px;
+
     top: 35px;
 
     z-index: 2;
@@ -190,6 +250,7 @@ main {
     position: absolute;
 
     width: 7px;
+
     height: 7px;
 
     background-color: #24235c;
@@ -212,6 +273,7 @@ main {
     position: absolute;
 
     width: 25px;
+
     height: 12px;
 
     border-bottom: 2px solid #24235c;
@@ -219,14 +281,18 @@ main {
     border-radius: 50%;
 
     left: 40px;
+
     top: 72px;
 }
 
 
-.body {
+/* CUERPO */
+
+.student-body {
     position: absolute;
 
     width: 190px;
+
     height: 110px;
 
     background-color: #c3cae8;
@@ -234,16 +300,20 @@ main {
     border-radius: 90px 90px 20px 20px;
 
     bottom: 0;
+
     left: 20px;
 
     z-index: 1;
 }
 
 
+/* LAPTOP */
+
 .laptop {
     position: absolute;
 
     width: 150px;
+
     height: 95px;
 
     background-color: #424790;
@@ -253,10 +323,13 @@ main {
     border-radius: 10px;
 
     left: 20px;
+
     top: 25px;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     color: #ffffff;
@@ -264,6 +337,10 @@ main {
     font-size: 30px;
 }
 
+
+/* =========================
+   BURBUJAS
+========================= */
 
 .speech {
     position: absolute;
@@ -287,20 +364,28 @@ main {
     box-shadow: 0 5px 20px rgba(66, 71, 144, 0.08);
 }
 
+
 .speech-one {
     left: 20px;
+
     top: 10px;
 }
 
+
 .speech-two {
     right: 10px;
+
     top: 30px;
 
     background-color: #f1a8c6;
+
     border: none;
 }
 
 
+/* =========================
+   ÁREAS
+========================= */
 
 .areas {
     display: grid;
@@ -313,7 +398,11 @@ main {
 }
 
 
-.card {
+/* =========================
+   TARJETAS SHIFT
+========================= */
+
+.shift-card {
     background-color: #ffffff;
 
     border-radius: 20px;
@@ -327,19 +416,25 @@ main {
     box-shadow: 0 8px 25px rgba(66, 71, 144, 0.06);
 
     transition: 0.3s ease;
+
+    border: none;
 }
 
 
-.card:hover {
+.shift-card:hover {
     transform: translateY(-6px);
 
     box-shadow: 0 15px 30px rgba(66, 71, 144, 0.13);
 }
 
 
+/* =========================
+   ICONOS
+========================= */
 
 .icon-container {
     width: 125px;
+
     height: 115px;
 
     margin: 0 auto 20px;
@@ -347,7 +442,9 @@ main {
     border-radius: 45%;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     font-size: 48px;
@@ -377,8 +474,11 @@ main {
 }
 
 
+/* =========================
+   TEXTO DE TARJETAS
+========================= */
 
-.card h2 {
+.shift-card h2 {
     font-size: 21px;
 
     color: #171742;
@@ -387,7 +487,7 @@ main {
 }
 
 
-.card p {
+.shift-card p {
     color: #62647a;
 
     font-size: 15px;
@@ -398,18 +498,29 @@ main {
 }
 
 
-.card button {
+/* =========================
+   BOTONES
+========================= */
+
+/*
+   Bootstrap está integrado mediante
+   la clase .btn.
+   .shift-btn conserva el diseño
+   original de SHIFT.
+*/
+
+.shift-btn {
     width: 100%;
 
-    border: none;
+    border: none !important;
 
-    background-color: #7168dc;
+    background-color: #7168dc !important;
 
-    color: white;
+    color: white !important;
 
     padding: 14px 10px;
 
-    border-radius: 10px;
+    border-radius: 10px !important;
 
     font-size: 16px;
 
@@ -419,13 +530,18 @@ main {
 }
 
 
-.card button:hover {
-    background-color: #424790;
+.shift-btn:hover {
+    background-color: #424790 !important;
+
+    color: white !important;
 
     transform: scale(1.02);
 }
 
 
+/* =========================
+   BANNER INFERIOR
+========================= */
 
 .bottom-banner {
     margin: 35px 20px 45px;
@@ -457,6 +573,10 @@ main {
 }
 
 
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 1100px) {
 
     .areas {
@@ -471,21 +591,19 @@ main {
 
 @media (max-width: 800px) {
 
-    .navbar {
-        padding: 0 4%;
+    .shift-navbar {
+        padding: 15px 4%;
     }
 
-    nav {
+    .shift-navbar nav {
         gap: 5px;
     }
 
-    nav a {
+    .shift-navbar nav a {
         font-size: 14px;
     }
 
     .hero {
-        grid-template-columns: 1fr;
-
         text-align: center;
     }
 
@@ -509,7 +627,7 @@ main {
         font-size: 28px;
     }
 
-    nav a {
+    .shift-navbar nav a {
         display: none;
     }
 
@@ -527,6 +645,7 @@ main {
 
     .bottom-banner {
         margin-left: 0;
+
         margin-right: 0;
     }
 }
